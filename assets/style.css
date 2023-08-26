@@ -80,6 +80,8 @@ font-size: 14px;
     left: 0px; 
     width: 50px; 
     height: 30px;
+    animation: leftToRight 5s ease-in-out infinite; 
+
 }
 .form-element{
     background: rgba( 255, 255, 255, 0.25 );
@@ -99,7 +101,8 @@ max-width: 600px;
     width: 20%;
 }
 .form-element input::placeholder {
-    color: #fff
+    color: #fff;
+    font-size: 14px;
   }
   .form-slash{
     padding-left:40px;
@@ -109,6 +112,7 @@ max-width: 600px;
     background: transparent;
     word-wrap: normal;
     color: #fff;
+    font-size: 14px;
     width: 20%;
 
     border: none;}
