@@ -418,7 +418,15 @@ footer button{
 
 
 @media only screen and (max-width: 768px){
- 
+    .active-nav::after {
+        content: '';
+        border: 1px solid #DF6951;
+        width: 35px;
+        height: 2px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+    }
     .content {
         position: absolute;
         top: 30%;
