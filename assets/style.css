@@ -47,6 +47,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 font-family: 'poppins',sans-serif;
 font-size: 14px;
 }
+.navbar-toggler {
+    
+    background-color: #DF6951;
+}
 .banner-section{
     background-image:url(./images/banner.png);
     height: 100vh;
