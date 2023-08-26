@@ -5,7 +5,9 @@
     padding:0px;
     margin:0px;
 }
-
+body{
+    overflow-x: hidden;
+}
 .nav-link{
     font-family: 'poppins',sans-serif;
     font-size: 14px;
@@ -15,6 +17,10 @@
 .navbar-nav .nav-link.active-nav, .navbar-nav .nav-link.show{
     color: #fff;
 }
+.navbar.scrolled {
+    background-color: #333; /* Change to the desired background color */
+  }
+  
 .active-nav::after{
     content:'';
     border: 1px solid  #DF6951;
@@ -71,6 +77,45 @@ font-size: 14px;
     width: 50px; 
     height: 30px;
 }
+.form-element{
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 20px 20px;
+max-width: 600px;
+}
+.form-element input{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-family:'poppins',sans-serif;
+    width: 20%;
+}
+.form-element input::placeholder {
+    color: #fff
+  }
+  .form-slash{
+    padding-left:40px;
+  }
+ 
+  .form-element  select {
+    background: transparent;
+    word-wrap: normal;
+    color: #fff;
+    width: 20%;
+
+    border: none;}
+    .form-element button {
+        background-color: #DF6951;
+    padding: 10px 30px;
+    color: #fff;
+    border: none;
+    font-family: 'poppins',sans-serif;
+    font-size: 14px;
+    }
 .title-trend::before {
     content: "";
     background-image: url(./images/eclispe.png); 
@@ -82,8 +127,19 @@ font-size: 14px;
     width: 100px;
     height: 100px;
     z-index: -1;
+    animation: leftToRight 5s ease-in-out infinite; 
 }
-
+@keyframes leftToRight{
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
 .client-section{
     padding:30px 0px;
     background-color: #F7F7F7;
@@ -298,8 +354,11 @@ color: rgba(0, 0, 0, 0.19);
 z-index: inherit;
 }
 footer{
-    padding:30px 0px;
+    padding:50px 0px;
     font-family: 'poppins',sans-serif;
+    background-image: url(./images/Footerimg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .footer-description{
     font-size:13px
@@ -342,4 +401,71 @@ footer button{
 .input-p{
     color:#181433;
     margin-top: 10px;
+}
+.footer-hr{
+    border:2px solid #E5E5EA ;    width:auto !important;}
+
+    .client-sec button{
+        display: none!important;
+    }
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .content {
+        position: absolute;
+        top: 30%;
+        max-width: 650px;
+        left: 0px;
+    padding: 20px;}
+    .content h1::before {
+        content: "";
+        background-image: url(./images/Vector-one.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 50px;
+        height: 30px;
+    }
+    .title-trend::before {
+        content: "";
+        background-image: url(./images/eclispe.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 23%;
+    }
+    .content h1 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+    .form-element input{
+        width: 100%;
+        margin-bottom:20px
+    }
+    .form-element select{
+        width: 100%;
+        margin-bottom:20px
+
+    }
+    .form-slash{
+        display: none;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        position: relative;
+        right: -33px;
+        top: 24px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        position: relative;
+        right: -33px;
+        top: 0!important;
+    }
+    .owl-image {
+        width: 181px!important;
+    }
 }
