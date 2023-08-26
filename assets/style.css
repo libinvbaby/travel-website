@@ -6,7 +6,7 @@
     margin:0px;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 .nav-link{
     font-family: 'poppins',sans-serif;
@@ -414,6 +414,7 @@ footer button{
 
 
 @media only screen and (max-width: 768px){
+ 
     .content {
         position: absolute;
         top: 30%;
@@ -467,5 +468,9 @@ footer button{
     }
     .owl-image {
         width: 181px!important;
+    }
+    footer {
+        
+        background-position: bottom;
     }
 }
