@@ -473,4 +473,7 @@ footer button{
         
         background-position: bottom;
     }
+    footer input {
+        
+        width: 50%;    }
 }
