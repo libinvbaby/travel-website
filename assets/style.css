@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Volkhov:wght@400;700&display=swap');
-
+:root{
+    --poppins:'Poppins', Arial, sans-serif;
+    --primary-color: #DF6951;
+    --volkhov:'Volkhov', serif
+}
 *{
     box-sizing: border-box;
     padding:0px;
     margin:0px;
 }
 body{
-    overflow-x: hidden!important;
+    overflow-x: hidden;
 }
 .nav-link{
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     font-size: 14px;
     color: #fff;
     position: relative;
@@ -23,7 +27,7 @@ body{
   
 .active-nav::after{
     content:'';
-    border: 1px solid  #DF6951;
+    border: 1px solid  var(--primary-color);
     width:30px;
     height: 2px;
     position: absolute;
@@ -31,11 +35,14 @@ body{
     left: 15px;
 }
 .btn-navabr{
-    background-color: #DF6951;
+    background-color: var(--primary-color);
     padding: 10px 20px;
     color: #fff;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     font-size:14px;
+}
+.nav-link:hover{
+    color: var(--primary-color);
 }
 .dropdown-menu{
     background: rgba( 217, 217, 217 , 0.25 );
@@ -44,12 +51,12 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-font-family: 'poppins',sans-serif;
+font-family: var(--poppins);
 font-size: 14px;
 }
 .navbar-toggler {
     
-    background-color: #DF6951;
+    background-color: var(--primary-color);
 }
 .banner-section{
     background-image:url(./images/banner.png);
@@ -64,7 +71,7 @@ font-size: 14px;
    
     left: 10%;
     color: #fff;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
 }
 .content h1{
     font-weight: 700;
@@ -97,7 +104,7 @@ max-width: 600px;
     border: none;
     background-color: transparent;
     color: #fff;
-    font-family:'poppins',sans-serif;
+    font-family:var(--poppins);
     width: 20%;
 }
 .form-element input::placeholder {
@@ -117,11 +124,11 @@ max-width: 600px;
 
     border: none;}
     .form-element button {
-        background-color: #DF6951;
+        background-color: var(--primary-color);
     padding: 10px 30px;
     color: #fff;
     border: none;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     font-size: 14px;
     }
 .title-trend::before {
@@ -171,10 +178,10 @@ max-width: 600px;
 .titles h5{
     font-size: 16px;
     font-weight: bold;
-    color: #DF6951
+    color: var(--primary-color)
 }
 .titles h2{
-    color: #181E4B;font-family: 'Volkhov', serif;
+    color: #181E4B;font-family: var(--volkhov);
     font-size: 44px;
 }
 .card-trend{
@@ -199,7 +206,7 @@ max-width: 600px;
 }
 
 .days{
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     color: #7D7D7D;
     font-size: 14px;
     display: flex;
@@ -210,7 +217,7 @@ max-width: 600px;
 .place-title{
     display: flex;
     justify-content: space-between;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
 }
 .fa-star{
     color: #FFBA0A
@@ -219,29 +226,29 @@ max-width: 600px;
     font-weight:bold;
 }
 .price{
-    color:#DF6951
+    color:var(--primary-color)
 }
 
 .price h3 span{
     text-decoration: line-through;
     color: #7D7D7D;
     font-size: 22px;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
 
 }
 
 .desc p{
     font-size: 14px;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
 
 }
 
 .more-button button{
-    background:#DF6951;
+    background:var(--primary-color);
     padding:14px 17px;
     border: none;
     color:#fff;
-    font-family:'Poppins',sans-serif;
+    font-family:var(--poppins);
     font-size: 15px;
 }
 .location{
@@ -266,7 +273,7 @@ max-width: 600px;
     position: relative;
     padding: 50px 20px;
     z-index: -2;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     text-align:center;
 }
 .testicard h3{
@@ -344,7 +351,7 @@ top: -40px;
     background-color: #737373; /* Color of the active line */
 }
 .owl-carousel .owl-dot.active{
-    background-color: #DF6951!important;
+    background-color: var(--primary-color)!important;
 }
 .owl-carousel .owl-dot{
     background-color: #fafafa;
@@ -363,7 +370,7 @@ z-index: inherit;
 }
 footer{
     padding:50px 0px;
-    font-family: 'poppins',sans-serif;
+    font-family: var(--poppins);
     background-image: url(./images/Footerimg.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -381,7 +388,7 @@ footer{
     margin-left:8px;
 }
 .footer-social li .fa-brands{
-    color:#DF6951;
+    color:var(--primary-color);
 }
 
 .company{
@@ -399,7 +406,7 @@ footer input{
     border-radius:5px
 }
 footer button{
-    background-color:#DF6951;
+    background-color:var(--primary-color);
     color:#fff;
     padding: 10px;
     border:none;
@@ -424,7 +431,7 @@ footer button{
 @media only screen and (max-width: 768px){
     .active-nav::after {
         content: '';
-        border: 1px solid #DF6951;
+        border: 1px solid var(--primary-color);
         width: 35px;
         height: 2px;
         position: absolute;
